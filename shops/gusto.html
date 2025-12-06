@@ -147,4 +147,11 @@
   <p class="note">※掲載情報は変更される場合があります。最新の対応状況は店舗でご確認ください。</p>
   <p><a href="../list.html">← お店一覧に戻る</a></p>
 </body>
+      <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("nav-placeholder").innerHTML = html;
+      });
+      </script>
 </html>
