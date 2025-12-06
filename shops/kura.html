@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>くら寿司の支払い方法 - つかえるPay</title>
+
+  <meta property="og:title" content="くら寿司の支払い方法 - つかえるPay" />
+  <meta property="og:description" content="くら寿司で使えるキャッシュレス決済・クレジットカード・QRコード決済などの対応状況をまとめました。" />
+  <meta property="og:image" content="https://pay.ad-hub.f5.si/images/ogp.png" />
+  <meta property="og:url" content="https://pay.ad-hub.f5.si/kura" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="つかえるPay" />
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4f7fa;
+      color: #333;
+      padding-bottom: 4rem;
+    }
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    th, td {
+      padding: 1rem;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+    }
+    th {
+      background: #e8f0fc;
+      color: #333;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    .footer-link {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .footer-link a {
+      color: #4a90e2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <header>
+    <h1>くら寿司の支払い方法</h1>
+    <p>キャッシュレス対応状況まとめ</p>
+  </header>
+
+  <main>
+    <table>
+      <tr>
+        <th>電子マネー</th>
+        <td>使えない</td>
+      </tr>
+      <tr>
+        <th>交通系電子マネー</th>
+        <td>使えない</td>
+      </tr>
+      <tr>
+        <th>クレジットカード</th>
+        <td>
+          使える（VISA / Mastercard / JCB / AMEX / Diners）<br />
+          通販サイトでも各種クレジットカードが利用可能。<br />
+          ※「スマホでお持ち帰り」の事前決済ではVisa、Mastercardのみ
+        </td>
+      </tr>
+      <tr>
+        <th>おすすめクレジットカード</th>
+        <td>三菱UFJカード 最大5.5％還元+α</td>
+      </tr>
+      <tr>
+        <th>ブランドプリペイド</th>
+        <td>au PAY プリペイドカード / ソフトバンクカード / dカード プリペイドなど、国際ブランド付きは使える</td>
+      </tr>
+      <tr>
+        <th>タッチ決済</th>
+        <td>
+          Visaのタッチ決済 / Mastercard®コンタクトレス / JCBのタッチ決済 / AMEXのタッチ決済 / ダイナースクラブ コンタクトレス
+        </td>
+      </tr>
+      <tr>
+        <th>QRコード決済</th>
+        <td>
+          PayPay / 楽天ペイ / メルペイ / d払い / au PAY / pring / ゆうちょPay / イオンペイ / Smart Code<br />
+          ※楽天ペイはポイント付与対象外
+        </td>
+      </tr>
+      <tr>
+        <th>デビットカード</th>
+        <td>使える</td>
+      </tr>
+      <tr>
+        <th>商品券・ギフトカード</th>
+        <td>くら寿司お食事券（通販サイトで販売）</td>
+      </tr>
+    </table>
+
+    <div class="footer-link">
+      <a href="index.html">← ホームに戻る</a>
+    </div>
+  </main>
+
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("nav-placeholder").innerHTML = html;
+      });
+  </script>
+</body>
+</html>
