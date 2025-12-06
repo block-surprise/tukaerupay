@@ -5,26 +5,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>つかえるPay - ホーム</title>
   <style>
-    body { font-family: sans-serif; padding: 2rem; background: #f9f9f9; color: #333; }
-    h1 { font-size: 1.8rem; }
-    .shop-list { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem; }
-    .shop-card {
-      background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      width: 200px; text-align: center;
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4f7fa;
+      color: #333;
     }
-    .shop-card:hover { background: #f0f8ff; cursor: pointer; }
-    a { text-decoration: none; color: inherit; }
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    main {
+      padding: 2rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .shop-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 2rem;
+      justify-content: center;
+    }
+    .shop-card {
+      background: white;
+      padding: 1.2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      width: 200px;
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .shop-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+      background: #f0f8ff;
+    }
+    .shop-card a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      display: block;
+    }
+    .footer-link {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    .footer-link a {
+      color: #4a90e2;
+      text-decoration: none;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
-  <h1>おすすめのお店</h1>
-  <div class="shop-list">
-    <div class="shop-card"><a href="shops/gusto.html">ガスト</a></div>
-    <div class="shop-card"><a href="shops/seven.html">セブンイレブン</a></div>
-    <div class="shop-card"><a href="shops/starbucks.html">スターバックス</a></div>
-  </div>
+  <header>
+    <h1>つかえるPay</h1>
+    <p>よく使うお店の決済方法をすぐチェック！</p>
+  </header>
 
-  <p style="margin-top:2rem;"><a href="list.html">▶ お店一覧を見る</a></p>
+  <main>
+    <h2>🌟 おすすめのお店</h2>
+    <div class="shop-list">
+      <div class="shop-card"><a href="shops/gusto.html">ガスト</a></div>
+      <div class="shop-card"><a href="shops/seven.html">セブンイレブン</a></div>
+      <div class="shop-card"><a href="shops/starbucks.html">スターバックス</a></div>
+    </div>
+
+    <div class="footer-link">
+      <a href="list.html">▶ お店一覧を見る</a>
+    </div>
+  </main>
 </body>
 </html>
-
