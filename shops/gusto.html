@@ -3,106 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ガストで使える決済 - つかえるPay</title>
+  <title>ガスト - つかえるPay</title>
   <style>
-    body { font-family: sans-serif; padding: 2rem; background: #fff; color: #333; }
-    h1 { font-size: 1.6rem; margin-bottom: 1rem; }
-    h2 { margin-top: 1.5rem; font-size: 1.2rem; }
-    ul { padding-left: 1.2rem; }
-    li { margin-bottom: 0.4rem; }
-    .note { font-size: 0.9rem; color: #666; margin-top: 1rem; }
-    a { color: #0077cc; text-decoration: none; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4f7fa;
+      color: #333;
+      padding-bottom: 4rem;
+    }
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .shop-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .shop-logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      object-fit: contain;
+    }
+    .payment-list {
+      list-style: none;
+      padding: 0;
+    }
+    .payment-list li {
+      background: white;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .back-link {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .back-link a {
+      color: #4a90e2;
+      text-decoration: none;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
-  <h1>ガストで使える決済</h1>
+  <div id="nav-placeholder"></div>
 
-  <h2>💳 クレジットカード</h2>
-  <ul>
-    <li>VISA</li>
-    <li>Mastercard</li>
-    <li>JCB</li>
-    <li>American Express</li>
-    <li>Diners Club</li>
-    <li>UnionPay（銀聯）</li>
-  </ul>
+  <header>
+    <h1>つかえるPay</h1>
+    <p>ガストで使える決済方法</p>
+  </header>
 
-  <h2>🌟 おすすめクレジットカード</h2>
-  <ul>
-    <li>三井住友カード各種（Visaのタッチ決済対応）</li>
-    <li>Mastercardコンタクトレス対応カード</li>
-    <li>→ 対象カードで最大7％還元キャンペーンあり</li>
-  </ul>
+  <main>
+    <div class="shop-header">
+      <img src="../images/icons/gusto.png" alt="ガストのロゴ" class="shop-logo" />
+      <h1>ガスト</h1>
+    </div>
 
-  <h2>📱 QRコード決済（バーコード決済）</h2>
-  <ul>
-    <li>PayPay</li>
-    <li>楽天ペイ</li>
-    <li>メルペイ</li>
-    <li>d払い</li>
-    <li>au PAY</li>
-    <li>J-Coin Pay</li>
-    <li>Alipay / WeChat Pay</li>
-    <li>イオンペイ</li>
-  </ul>
-  <p class="note">※PayPay・d払い・楽天ペイ・メルペイはテーブル決済でも利用可能。<br>
-  ※一部店舗では対応状況が異なる場合があります。</p>
+    <ul class="payment-list">
+      <li>💳 クレジットカード（VISA / Master / JCB / AMEX）</li>
+      <li>📱 QRコード決済（PayPay / d払い / 楽天ペイ / au PAY）</li>
+      <li>💰 電子マネー（iD / QUICPay / 交通系IC）</li>
+    </ul>
 
-  <h2>💰 電子マネー</h2>
-  <ul>
-    <li>WAON</li>
-    <li>楽天Edy</li>
-    <li>iD</li>
-    <li>QUICPay</li>
-  </ul>
-  <p class="note">※電子マネーの対応状況は店舗ごとに異なります。</p>
+    <div class="back-link">
+      <a href="../list.html">← お店一覧に戻る</a>
+    </div>
+  </main>
 
-  <h2>🚃 交通系電子マネー</h2>
-  <ul>
-    <li>Suica</li>
-    <li>PASMO</li>
-    <li>manaca</li>
-    <li>SUGOCA</li>
-    <li>TOICA</li>
-    <li>nimoca</li>
-    <li>Kitaca</li>
-    <li>ICOCA</li>
-    <li>はやかけん</li>
-  </ul>
-
-  <h2>💳 ブランドプリペイド</h2>
-  <ul>
-    <li>au PAY プリペイドカード</li>
-    <li>ソフトバンクカード</li>
-    <li>dカード プリペイド</li>
-    <li>その他の国際ブランド付きプリペイドカード</li>
-  </ul>
-
-  <h2>📡 タッチ決済（コンタクトレス決済）</h2>
-  <ul>
-    <li>Visaのタッチ決済</li>
-    <li>Mastercard®コンタクトレス</li>
-    <li>JCBのタッチ決済</li>
-    <li>American Expressのタッチ決済</li>
-  </ul>
-  <p class="note">※セルフレジでは特に使いやすいです。<br>
-  ※一部店舗では非対応の場合があります。</p>
-
-  <h2>🏦 デビットカード</h2>
-  <ul>
-    <li>VISAデビットカード</li>
-    <li>JCBデビットカード</li>
-  </ul>
-  <p class="note">※一部店舗のみ対応</p>
-
-  <h2>🎁 商品券・ギフトカード</h2>
-  <ul>
-    <li>ジェフグルメカード</li>
-    <li>すかいらーくご優待券</li>
-    <li>※QUOカードは2018年6月以降利用不可</li>
-  </ul>
-
-  <p class="note">※掲載情報は変更される場合があります。最新の対応状況は店舗でご確認ください。</p>
-  <p><a href="../list.html">← お店一覧に戻る</a></p>
+  <script>
+    fetch("../nav.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("nav-placeholder").innerHTML = html;
+      });
+  </script>
 </body>
 </html>
