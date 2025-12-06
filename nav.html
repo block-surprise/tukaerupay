@@ -1,0 +1,61 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  integrity="sha512-..."
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+<nav class="nav-bar">
+  <a href="index.html"><i class="fas fa-home"></i><span>ホーム</span></a>
+  <a href="list.html"><i class="fas fa-list"></i><span>お店一覧</span></a>
+  <a href="https://example.com/about"><i class="fas fa-info-circle"></i><span>このサイトについて</span></a>
+</nav>
+
+<style>
+  .nav-bar {
+    position: fixed;
+    width: 100%;
+    background: #ffffffcc;
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.6rem 0;
+    border-top: 1px solid #ddd;
+    z-index: 1000;
+  }
+
+  .nav-bar a {
+    text-decoration: none;
+    color: #4a90e2;
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-bar i {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+  }
+
+  /* PCでは上部に表示 */
+  @media (min-width: 768px) {
+    .nav-bar {
+      top: 0;
+      bottom: auto;
+      border-top: none;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+
+  /* スマホでは下部に表示 */
+  @media (max-width: 767px) {
+    .nav-bar {
+      bottom: 0;
+      top: auto;
+    }
+  }
+</style>
