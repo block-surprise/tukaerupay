@@ -36,15 +36,18 @@
       justify-content: center;
     }
     .shop-card {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
       background: white;
       padding: 1rem;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
       width: 220px;
       text-align: left;
-      display: flex;
-      align-items: center;
-      gap: 0.8rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
     .shop-card:hover {
@@ -58,12 +61,6 @@
       border-radius: 6px;
       object-fit: contain;
     }
-    .shop-card a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-      display: inline-block;
-    }
     .footer-link {
       margin-top: 3rem;
       text-align: center;
@@ -74,11 +71,10 @@
       font-weight: bold;
     }
     @media screen and (min-width: 768px) {
-  header {
-    margin-top: 60px; /* ナビの高さに合わせて調整！ */
-  }
-}
-
+      header {
+        margin-top: 60px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -92,18 +88,18 @@
   <main>
     <h2>🌟 おすすめのお店</h2>
     <div class="shop-list">
-      <div class="shop-card">
+      <a href="shops/gusto.html" class="shop-card">
         <img src="images/icons/gusto.png" alt="ガスト" />
-        <a href="shops/gusto.html">ガスト</a>
-      </div>
-      <div class="shop-card">
+        <span>ガスト</span>
+      </a>
+      <a href="shops/seven.html" class="shop-card">
         <img src="images/icons/seven.png" alt="セブンイレブン" />
-        <a href="shops/seven.html">セブンイレブン</a>
-      </div>
-      <div class="shop-card">
+        <span>セブンイレブン</span>
+      </a>
+      <a href="shops/starbucks.html" class="shop-card">
         <img src="images/icons/starbucks.png" alt="スターバックス" />
-        <a href="shops/starbucks.html">スターバックス</a>
-      </div>
+        <span>スターバックス</span>
+      </a>
     </div>
 
     <div class="footer-link">
@@ -120,4 +116,3 @@
   </script>
 </body>
 </html>
-
