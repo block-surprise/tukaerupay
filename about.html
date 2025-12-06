@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>つかえるPayについて</title>
 
+  <!-- ファビコン -->
+  <link rel="icon" type="image/png" href="https://pay.ad-hub.f5.si/images/favicon.png" />
+
   <!-- OGP設定 -->
   <meta property="og:title" content="つかえるPayについて" />
   <meta property="og:description" content="つかえるPayは、身近なお店で使える決済方法をまとめてチェックできるサービスです。" />
@@ -15,10 +18,11 @@
 
   <style>
     body {
-      font-family: sans-serif;
-      padding: 2rem;
-      background: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4f7fa;
       color: #333;
+      padding-bottom: 4rem;
     }
     header {
       background: #4a90e2;
@@ -28,17 +32,36 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     h1 {
-      font-size: 1.6rem;
-      margin-bottom: 1rem;
-      text-align: center;
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    section {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    h2 {
+      font-size: 1.4rem;
+      margin-top: 0;
     }
     p {
       line-height: 1.8;
       margin-bottom: 1.2rem;
     }
     a {
-      color: #0077cc;
+      color: #4a90e2;
       text-decoration: none;
+      font-weight: bold;
+    }
+    .footer-link {
+      margin-top: 2rem;
+      text-align: center;
     }
   </style>
 </head>
@@ -51,29 +74,29 @@
   </header>
 
   <main>
-    <h1>つかえるPayについて</h1>
+    <section>
+      <h2>つかえるPayとは？</h2>
+      <p>
+        「つかえるPay」は、セブンイレブンやガストなど、<br>
+        身近なお店で使える決済方法をすぐに確認できるサービスです。
+      </p>
+      <p>
+        クレジットカード、QRコード決済、電子マネー、交通系ICカードなど、<br>
+        お店ごとの対応状況をわかりやすくまとめています。
+      </p>
+      <p>
+        「このお店、PayPay使える？」「Suicaは？」<br>
+        そんな疑問をすぐに解決できるよう、情報をシンプルに整理しています。
+      </p>
+      <p>
+        これからも、より多くのお店に対応し、<br>
+        みなさんの「支払いの不安」をなくすお手伝いができたらうれしいです。
+      </p>
+    </section>
 
-    <p>
-      「つかえるPay」は、セブンイレブンやガストなど、<br>
-      身近なお店で使える決済方法をすぐに確認できるサービスです。
-    </p>
-
-    <p>
-      クレジットカード、QRコード決済、電子マネー、交通系ICカードなど、<br>
-      お店ごとの対応状況をわかりやすくまとめています。
-    </p>
-
-    <p>
-      「このお店、PayPay使える？」「Suicaは？」<br>
-      そんな疑問をすぐに解決できるよう、情報をシンプルに整理しています。
-    </p>
-
-    <p>
-      これからも、より多くのお店に対応し、<br>
-      みなさんの「支払いの不安」をなくすお手伝いができたらうれしいです。
-    </p>
-
-    <p><a href="list.html">← お店一覧に戻る</a></p>
+    <div class="footer-link">
+      <a href="list.html">← お店一覧に戻る</a>
+    </div>
   </main>
 
   <script>
