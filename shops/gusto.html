@@ -45,14 +45,16 @@
       color: #0077cc;
       text-decoration: none;
     }
-            @media screen and (min-width: 768px) {
-  header {
-    margin-top: 60px; /* ナビの高さに合わせて調整！ */
-  }
-    }  
+    @media screen and (min-width: 768px) {
+      header {
+        margin-top: 60px;
+      }
+    }
   </style>
 </head>
 <body>
+  <div id="nav-placeholder"></div> <!-- ナビ表示用 -->
+
   <div class="hero">
     <img src="../images/icons/gusto.png" alt="ガストのロゴ" class="hero-logo" />
   </div>
@@ -146,12 +148,13 @@
 
   <p class="note">※掲載情報は変更される場合があります。最新の対応状況は店舗でご確認ください。</p>
   <p><a href="../list.html">← お店一覧に戻る</a></p>
-</body>
-      <script>
-    fetch("nav.html")
+
+  <script>
+    fetch("../nav.html")
       .then(res => res.text())
       .then(html => {
         document.getElementById("nav-placeholder").innerHTML = html;
       });
-      </script>
+  </script>
+</body>
 </html>
