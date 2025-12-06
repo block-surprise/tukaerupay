@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>お店一覧 - つかえるPay</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; background: #fefefe; color: #333; }
+    h1 { font-size: 1.6rem; }
+    input[type="text"] {
+      padding: 0.5rem; font-size: 1rem; width: 100%; max-width: 400px;
+      border: 1px solid #ccc; border-radius: 6px; margin-bottom: 1rem;
+    }
+    ul { list-style: none; padding: 0; }
+    li {
+      padding: 0.6rem 1rem; background: #fff; margin-bottom: 0.5rem;
+      border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+    li a { text-decoration: none; color: #0077cc; }
+  </style>
+</head>
+<body>
+  <h1>お店一覧</h1>
+  <input type="text" id="search" placeholder="お店の名前を検索..." />
+
+  <ul id="shopList">
+    <!-- JavaScriptで自動生成 -->
+  </ul>
+
+  <script>
+    const shopList = [
+      { name: "ガスト", file: "gusto.html" },
+      { name: "セブンイレブン", file: "seven.html" },
+      { name: "スターバックス", file: "starbucks.html" },
+      { name: "無印良品", file: "muji.html" },
+      { name: "ローソン", file: "lawson.html" },
+      { name: "ファミリーマート", file: "familymart.html" }
+    ];
+
+    const listEl = document.getElementById("shopList");
+    const searchEl = document.getElementById("search");
+
+    function renderList(filter = "") {
+      listEl.innerHTML = "";
+      const filtered = shopList.filter(shop =>
+        shop.name.includes(filter.trim())
+      );
+      filtered.forEach(shop => {
+        const li = document.createElement("li");
+        li.innerHTML = `<a href="shops/${shop.file}">${shop.name}</a>`;
+        listEl.appendChild(li);
+      });
+    }
+
+    searchEl.addEventListener("input", () => {
+      renderList(searchEl.value);
+    });
+
+    renderList();
+  </script>
+</body>
+</html>
