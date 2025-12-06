@@ -1,0 +1,38 @@
+[
+  {
+    "name": "ガスト",
+    "file": "gusto.html",
+    "kana": "がすと",
+    "tags": ["ファミレス", "飲食", "すかいらーく"]
+  },
+  {
+    "name": "セブンイレブン",
+    "file": "seven.html",
+    "kana": "せぶんいれぶん",
+    "tags": ["コンビニ", "小売"]
+  },
+  {
+    "name": "スターバックス",
+    "file": "starbucks.html",
+    "kana": "すたーばっくす",
+    "tags": ["カフェ", "飲食"]
+  },
+  {
+    "name": "無印良品",
+    "file": "muji.html",
+    "kana": "むじるしりょうひん",
+    "tags": ["雑貨", "アパレル"]
+  },
+  {
+    "name": "ローソン",
+    "file": "lawson.html",
+    "kana": "ろーそん",
+    "tags": ["コンビニ", "小売"]
+  },
+  {
+    "name": "ファミリーマート",
+    "file": "familymart.html",
+    "kana": "ふぁみりーまーと",
+    "tags": ["コンビニ", "小売"]
+  }
+]
