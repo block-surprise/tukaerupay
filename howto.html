@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>つかえるPayの使い方</title>
+
+  <!-- OGP設定 -->
+  <meta property="og:title" content="つかえるPayの使い方" />
+  <meta property="og:description" content="つかえるPayの使い方をステップ形式でわかりやすくご紹介します。" />
+  <meta property="og:image" content="https://pay.ad-hub.f5.si/images/ogp.png" />
+  <meta property="og:url" content="https://pay.ad-hub.f5.si/howto.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="つかえるPay" />
+
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      background: #fff;
+      color: #333;
+    }
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.2rem;
+    }
+    .step {
+      margin: 1.5rem 0;
+      display: flex;
+      align-items: center;
+    }
+    .step img {
+      width: 60px;
+      height: 60px;
+      margin-right: 1rem;
+    }
+    .faq {
+      margin-top: 2rem;
+    }
+    .faq h3 {
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+    .faq p {
+      margin: 0.5rem 0 1rem;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <header>
+    <h1>つかえるPay</h1>
+    <p>よく使うお店の決済方法をすぐチェック！</p>
+  </header>
+
+  <main>
+    <h1>つかえるPayの使い方</h1>
+
+    <div class="step">
+      <img src="images/icons/search.png" alt="検索アイコン" />
+      <div>
+        <h2>1. お店を探す</h2>
+        <p>トップページやお店一覧から、気になるお店を選びましょう。</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <img src="images/icons/card.png" alt="カードアイコン" />
+      <div>
+        <h2>2. 決済方法を確認</h2>
+        <p>クレジットカード、QRコード決済、電子マネーなどの対応状況をチェック！</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <img src="images/icons/pay.png" alt="支払いアイコン" />
+      <div>
+        <h2>3. スムーズにお支払い</h2>
+        <p>事前に確認しておけば、レジで迷わずスムーズにお支払いできます。</p>
+      </div>
+    </div>
+
+    <section class="faq">
+      <h2>よくある質問（FAQ）</h2>
+
+      <h3>Q. 情報はどれくらい正確ですか？</h3>
+      <p>A. できる限り最新の情報を掲載していますが、店舗によって対応状況が異なる場合があります。</p>
+
+      <h3>Q. 掲載されていないお店もありますか？</h3>
+      <p>A. はい、現在は一部のお店のみ掲載しています。今後も順次追加予定です！</p>
+
+      <h3>Q. 情報が間違っていたら？</h3>
+      <p>A. お手数ですが、お問い合わせフォームからご連絡いただけると助かります。</p>
+    </section>
+
+    <p><a href="list.html">← お店一覧に戻る</a></p>
+  </main>
+
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("nav-placeholder").innerHTML = html;
+      });
+  </script>
+</body>
+</html>
