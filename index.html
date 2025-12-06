@@ -4,13 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>つかえるPay - ホーム</title>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-..."
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -59,10 +52,11 @@
       box-shadow: 0 6px 16px rgba(0,0,0,0.12);
       background: #f0f8ff;
     }
-    .shop-card i {
-      font-size: 1.5rem;
-      color: #4a90e2;
-      min-width: 24px;
+    .shop-card img {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      object-fit: contain;
     }
     .shop-card a {
       text-decoration: none;
@@ -93,15 +87,15 @@
     <h2>🌟 おすすめのお店</h2>
     <div class="shop-list">
       <div class="shop-card">
-        <i class="fas fa-utensils"></i>
+        <img src="images/icons/gusto.png" alt="ガスト" />
         <a href="shops/gusto.html">ガスト</a>
       </div>
       <div class="shop-card">
-        <i class="fas fa-store"></i>
+        <img src="images/icons/seven.png" alt="セブンイレブン" />
         <a href="shops/seven.html">セブンイレブン</a>
       </div>
       <div class="shop-card">
-        <i class="fab fa-java"></i>
+        <img src="images/icons/starbucks.png" alt="スターバックス" />
         <a href="shops/starbucks.html">スターバックス</a>
       </div>
     </div>
@@ -120,3 +114,4 @@
   </script>
 </body>
 </html>
+
