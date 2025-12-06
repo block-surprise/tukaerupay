@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>タッチ決済が使えるお店 - つかえるPay</title>
+
+  <meta property="og:title" content="タッチ決済が使えるお店 - つかえるPay" />
+  <meta property="og:description" content="Visaタッチ・iD・QUICPayなど、タッチ決済が使えるお店を一覧で紹介！" />
+  <meta property="og:image" content="https://pay.ad-hub.f5.si/images/ogp.png" />
+  <meta property="og:url" content="https://pay.ad-hub.f5.si/tags/touch" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="つかえるPay" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4f7fa;
+      color: #333;
+      padding-bottom: 4rem;
+    }
+    header {
+      background: #6366f1;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .shop-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .shop-card {
+      background: white;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      text-decoration: none;
+      color: #333;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      flex: 1 1 160px;
+      transition: transform 0.2s;
+    }
+    .shop-card:hover {
+      transform: translateY(-4px);
+    }
+    .shop-card i {
+      font-size: 1.6rem;
+      color: #6366f1;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    .footer-link {
+      margin-top: 2rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <header>
+    <h1><i class="fa-solid fa-wave-square"></i> タッチ決済が使えるお店</h1>
+    <p>Visaタッチ・iD・QUICPayなど、かざすだけで支払えるお店をチェック！</p>
+  </header>
+
+  <main>
+    <div class="shop-list">
+      <a href="../shops/gusto.html" class="shop-card">
+        <i class="fa-solid fa-utensils"></i>
+        <span>ガスト</span>
+      </a>
+      <a href="../shops/starbucks.html" class="shop-card">
+        <i class="fa-solid fa-mug-hot"></i>
+        <span>スターバックス</span>
+      </a>
+      <!-- 他の店舗もここに追加できるよ！ -->
+    </div>
+
+    <div class="footer-link">
+      <a href="../index.html">← ホームに戻る</a>
+    </div>
+  </main>
+
+  <script>
+    fetch("../nav.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("nav-placeholder").innerHTML = html;
+      });
+  </script>
+</body>
+</html>
