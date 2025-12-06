@@ -4,13 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>つかえるPay - ホーム</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       background: #f4f7fa;
       color: #333;
-      padding-bottom: 4rem; /* スマホ下ナビ分の余白 */
+      padding-bottom: 4rem;
     }
     header {
       background: #4a90e2;
@@ -37,11 +44,14 @@
     }
     .shop-card {
       background: white;
-      padding: 1.2rem;
+      padding: 1rem;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      width: 200px;
-      text-align: center;
+      width: 220px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
     .shop-card:hover {
@@ -49,11 +59,16 @@
       box-shadow: 0 6px 16px rgba(0,0,0,0.12);
       background: #f0f8ff;
     }
+    .shop-card i {
+      font-size: 1.5rem;
+      color: #4a90e2;
+      min-width: 24px;
+    }
     .shop-card a {
       text-decoration: none;
       color: #333;
       font-weight: bold;
-      display: block;
+      display: inline-block;
     }
     .footer-link {
       margin-top: 3rem;
@@ -77,9 +92,18 @@
   <main>
     <h2>🌟 おすすめのお店</h2>
     <div class="shop-list">
-      <div class="shop-card"><a href="shops/gusto.html">ガスト</a></div>
-      <div class="shop-card"><a href="shops/seven.html">セブンイレブン</a></div>
-      <div class="shop-card"><a href="shops/starbucks.html">スターバックス</a></div>
+      <div class="shop-card">
+        <i class="fas fa-utensils"></i>
+        <a href="shops/gusto.html">ガスト</a>
+      </div>
+      <div class="shop-card">
+        <i class="fas fa-store"></i>
+        <a href="shops/seven.html">セブンイレブン</a>
+      </div>
+      <div class="shop-card">
+        <i class="fab fa-java"></i>
+        <a href="shops/starbucks.html">スターバックス</a>
+      </div>
     </div>
 
     <div class="footer-link">
