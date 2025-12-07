@@ -18,24 +18,46 @@
       margin: 0;
       background: #f4f7fa;
       color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
       padding: 2rem;
+      text-align: center;
+    }
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
     }
     h1 {
-      font-size: 3rem;
+      font-size: 2rem;
       margin-bottom: 1rem;
       color: #4a90e2;
     }
-    p {
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      color: #333;
     }
-    a {
+    p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto 2rem;
+      max-width: 300px;
+    }
+    li {
+      margin: 0.5rem 0;
+    }
+    li a {
+      color: #4a90e2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .button-link {
       display: inline-block;
       padding: 0.8rem 1.6rem;
       background: #4a90e2;
@@ -45,34 +67,39 @@
       font-weight: bold;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       transition: background 0.2s ease;
+      margin-top: 1rem;
     }
-    a:hover {
+    .button-link:hover {
       background: #357ac9;
     }
-    .ghost {
-      font-size: 4rem;
-      margin-bottom: 1rem;
+    .ad-slot {
+      margin-top: 3rem;
+    }
+    @media screen and (min-width: 768px) {
+      body {
+        padding-top: 60px;
+      }
     }
   </style>
 </head>
 <body>
-<h1>ページが見つかりませんでした</h1>
-<p>お探しのページは存在しないか、URLが間違っている可能性があります。</p>
 
-<h2> よく見られているページ</h2>
-<ul>
-  <li><a href="/list.html">お店一覧を見る</a></li>
-  <li><a href="/tags/paypay.html">PayPayが使えるお店</a></li>
-  <li><a href="/tags/smartcode.html">Smart Codeって？</a></li>
-</ul>
+  <h1>ページが見つかりませんでした</h1>
+  <p>お探しのページは存在しないか、URLが間違っている可能性があります。</p>
 
-<h2>🆘 お困りですか？</h2>
-<p><a href="/help.html">ヘルプページ</a> で使い方やよくある質問をご確認いただけます。</p>
+  <h2>🔎 よく見られているページ</h2>
+  <ul>
+    <li><a href="/list.html">お店一覧を見る</a></li>
+    <li><a href="/tags/paypay.html">PayPayが使えるお店</a></li>
+    <li><a href="/tips/smartcode.html">Smart Codeって？</a></li>
+  </ul>
 
-<!-- 広告スペース -->
-<div class="ad-slot">
-  <!-- 広告コード -->
-</div>
+  <h2>🆘 お困りですか？</h2>
+  <p><a class="button-link" href="/help.html">ヘルプページを見る</a></p>
+
+  <div class="ad-slot">
+    <!-- 広告コードをここに -->
+  </div>
 
 </body>
 </html>
