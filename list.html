@@ -4,14 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>お店一覧 - つかえるPay</title>
-  
-  <!-- OGP設定 -->
-<meta property="og:title" content="お店一覧 - つかえるPay" />
-<meta property="og:description" content="セブンイレブンやガストなど、身近なお店で使える決済方法を一覧でチェック！" />
-<meta property="og:image" content="https://pay.ad-hub.f5.si/images/ogp.png" />
-<meta property="og:url" content="https://pay.ad-hub.f5.si/list" />
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="つかえるPay" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <meta property="og:title" content="お店一覧 - つかえるPay" />
+  <meta property="og:description" content="セブンイレブンやガストなど、身近なお店で使える決済方法を一覧でチェック！" />
+  <meta property="og:image" content="https://pay.ad-hub.f5.si/images/ogp.png" />
+  <meta property="og:url" content="https://pay.ad-hub.f5.si/list" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="つかえるPay" />
 
   <style>
     body {
@@ -70,11 +71,11 @@
       background: #f0f8ff;
       box-shadow: 0 6px 16px rgba(0,0,0,0.12);
     }
-    .shop-card img {
+    .shop-card i {
+      font-size: 1.4rem;
+      color: #4a90e2;
       width: 28px;
-      height: 28px;
-      border-radius: 6px;
-      object-fit: contain;
+      text-align: center;
     }
     .back-link {
       margin-top: 2rem;
@@ -86,11 +87,10 @@
       font-weight: bold;
     }
     @media screen and (min-width: 768px) {
-  header {
-    margin-top: 60px; /* ナビの高さに合わせて調整！ */
-  }
-}
-
+      header {
+        margin-top: 60px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -119,55 +119,53 @@
       });
 
 const shopList = [
-  { name: "ガスト", file: "gusto.html", icon: "gusto.png" },
-  { name: "セブンイレブン", file: "seven.html", icon: "seven.png" },
-  { name: "スターバックス", file: "starbucks.html", icon: "starbucks.png" },
-  { name: "無印良品", file: "muji.html", icon: "muji.png" },
-  { name: "ローソン", file: "lawson.html", icon: "lawson.png" },
-  { name: "ファミリーマート", file: "familymart.html", icon: "familymart.png" },
-  { name: "ユニクロ", file: "uniqlo.html", icon: "uniqlo.png" },
-  { name: "GU", file: "gu.html", icon: "gu.png" },
-  { name: "ドン・キホーテ", file: "donki.html", icon: "donki.png" },
-  { name: "マツモトキヨシ", file: "matsukiyo.html", icon: "matsukiyo.png" },
-  { name: "サイゼリヤ", file: "saizeriya.html", icon: "saizeriya.png" },
-  { name: "くら寿司", file: "kura.html", icon: "kura.png" },
-  { name: "スシロー", file: "sushiro.html", icon: "sushiro.png" },
-  { name: "はま寿司", file: "hamazushi.html", icon: "hamazushi.png" },
-  { name: "ミスタードーナツ", file: "misdo.html", icon: "misdo.png" },
-  { name: "イオン", file: "aeon.html", icon: "aeon.png" },
-  { name: "マクドナルド", file: "mcdonalds.html", icon: "mcdonalds.png" },
-  { name: "ケンタッキー", file: "kfc.html", icon: "kfc.png" },
-  { name: "モスバーガー", file: "mos.html", icon: "mos.png" },
-  { name: "コメダ珈琲", file: "komeda.html", icon: "komeda.png" }
+  { name: "ガスト", file: "gusto.html", iconFA: "fa-utensils" },
+  { name: "セブンイレブン", file: "seven.html", iconFA: "fa-store" },
+  { name: "スターバックス", file: "starbucks.html", iconFA: "fa-mug-hot" },
+  { name: "無印良品", file: "muji.html", iconFA: "fa-box" },
+  { name: "ローソン", file: "lawson.html", iconFA: "fa-store" },
+  { name: "ファミリーマート", file: "familymart.html", iconFA: "fa-store" },
+  { name: "ユニクロ", file: "uniqlo.html", iconFA: "fa-shirt" },
+  { name: "GU", file: "gu.html", iconFA: "fa-shirt" },
+  { name: "ドン・キホーテ", file: "donki.html", iconFA: "fa-cart-shopping" },
+  { name: "マツモトキヨシ", file: "matsukiyo.html", iconFA: "fa-prescription-bottle" },
+  { name: "サイゼリヤ", file: "saizeriya.html", iconFA: "fa-pizza-slice" },
+  { name: "くら寿司", file: "kura.html", iconFA: "fa-fish" },
+  { name: "スシロー", file: "sushiro.html", iconFA: "fa-fish-fins" },
+  { name: "はま寿司", file: "hamazushi.html", iconFA: "fa-water" },
+  { name: "ミスタードーナツ", file: "misdo.html", iconFA: "fa-donut" },
+  { name: "イオン", file: "aeon.html", iconFA: "fa-building" },
+  { name: "マクドナルド", file: "mcdonalds.html", iconFA: "fa-burger" },
+  { name: "ケンタッキー", file: "kfc.html", iconFA: "fa-drumstick-bite" },
+  { name: "モスバーガー", file: "mos.html", iconFA: "fa-burger" },
+  { name: "コメダ珈琲", file: "komeda.html", iconFA: "fa-mug-saucer" }
 ];
 
+const listEl = document.getElementById("shopList");
+const searchEl = document.getElementById("search");
 
+function renderList(filter = "") {
+  listEl.innerHTML = "";
+  const filtered = shopList.filter(shop =>
+    shop.name.includes(filter.trim())
+  );
+  filtered.forEach(shop => {
+    const a = document.createElement("a");
+    a.href = `shops/${shop.file}`;
+    a.className = "shop-card";
+    a.innerHTML = `
+      <i class="fa-solid ${shop.iconFA}"></i>
+      <span>${shop.name}</span>
+    `;
+    listEl.appendChild(a);
+  });
+}
 
-    const listEl = document.getElementById("shopList");
-    const searchEl = document.getElementById("search");
+searchEl.addEventListener("input", () => {
+  renderList(searchEl.value);
+});
 
-    function renderList(filter = "") {
-      listEl.innerHTML = "";
-      const filtered = shopList.filter(shop =>
-        shop.name.includes(filter.trim())
-      );
-      filtered.forEach(shop => {
-        const a = document.createElement("a");
-        a.href = `shops/${shop.file}`;
-        a.className = "shop-card";
-        a.innerHTML = `
-          <img src="images/icons/${shop.icon}" alt="${shop.name}" />
-          <span>${shop.name}</span>
-        `;
-        listEl.appendChild(a);
-      });
-    }
-
-    searchEl.addEventListener("input", () => {
-      renderList(searchEl.value);
-    });
-
-    renderList();
+renderList();
   </script>
 </body>
 </html>
