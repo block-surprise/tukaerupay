@@ -4,108 +4,184 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PayPayが使えるお店 - つかえるPay</title>
-
   <meta property="og:title" content="PayPayが使えるお店 - つかえるPay" />
-  <meta property="og:description" content="PayPayが使えるお店を一覧で紹介！コンビニ・カフェ・ファミレスなど、対応店舗をチェックしよう。" />
+  <meta property="og:description" content="PayPayが使えるお店を一覧で紹介！対応店舗をチェックしよう。" />
   <meta property="og:image" content="https://pay.ad-hub.f5.si/images/ogp.png" />
   <meta property="og:url" content="https://pay.ad-hub.f5.si/tags/paypay" />
   <meta property="og:type" content="article" />
   <meta property="og:site_name" content="つかえるPay" />
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NFGGBKYCZ9"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-NFGGBKYCZ9');
 </script>
-
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background: #f4f7fa;
-      color: #333;
-      padding-bottom: 4rem;
-    }
-    header {
-      background: #f43f5e;
-      color: white;
-      padding: 1.5rem;
-      text-align: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
-    }
-    h1 {
-      margin: 0;
-      font-size: 1.8rem;
-    }
-    main {
-      padding: 2rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    .shop-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-    .shop-card {
-      background: white;
-      border-radius: 8px;
-      padding: 1rem;
-      text-align: center;
-      text-decoration: none;
-      color: #333;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-      flex: 1 1 160px;
-      transition: transform 0.2s;
-    }
-    .shop-card:hover {
-      transform: translateY(-4px);
-    }
-    .shop-card i {
-      font-size: 1.6rem;
-      color: #f43f5e;
-      margin-bottom: 0.5rem;
-      display: block;
-    }
-    .footer-link {
-      margin-top: 2rem;
-      text-align: center;
-    }
-    .a{
-      padding: 70px;
-    }
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f7fa; color: #333; padding-bottom: 4rem; }
+    header { background: #f43f5e; color: white; padding: 1.5rem; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.1); margin-bottom: 2rem; }
+    h1 { margin: 0; font-size: 1.8rem; }
+    main { padding: 2rem; max-width: 900px; margin: 0 auto; }
+    .shop-list { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .shop-card { background: white; border-radius: 8px; padding: 1rem; text-align: center; text-decoration: none; color: #333; box-shadow: 0 2px 4px rgba(0,0,0,0.05); flex: 1 1 160px; transition: transform 0.2s; }
+    .shop-card:hover { transform: translateY(-4px); }
+    .shop-card i { font-size: 1.6rem; color: #f43f5e; margin-bottom: 0.5rem; display: block; }
+    .note { font-size: 0.9rem; color: #666; margin-top: 1rem; }
+    .footer-link { margin-top: 2rem; text-align: center; }
+    a { color: #4a90e2; font-weight: bold; text-decoration: none; }
+    @media screen and (min-width: 768px) { header { margin-top: 60px; } }
   </style>
 </head>
 <body>
+<!-- admax -->
+<script src="https://adm.shinobi.jp/s/97bf17fa22046202fb1c9cef5b9c8078"></script>
+<!-- admax -->
   <div id="nav-placeholder"></div>
 
   <header>
-    <h1 class="a"><i class="fa-brands fa-paypal"></i> PayPayが使えるお店</h1>
-    <p>コンビニ・カフェ・ファミレスなど、PayPay対応店舗をチェック！</p>
+    <h1><i class="fa-brands fa-paypal"></i> PayPayが使えるお店</h1>
+    <p>コンビニ・飲食店・量販店など、PayPay対応店舗をチェック！</p>
   </header>
 
   <main>
+    <p>全33件のお店が対応しています（当サイト掲載分）。</p>
     <div class="shop-list">
       <a href="../shops/seven.html" class="shop-card">
         <i class="fa-solid fa-store"></i>
         <span>セブンイレブン</span>
       </a>
+      <a href="../shops/lawson.html" class="shop-card">
+        <i class="fa-solid fa-store"></i>
+        <span>ローソン</span>
+      </a>
+      <a href="../shops/familymart.html" class="shop-card">
+        <i class="fa-solid fa-store"></i>
+        <span>ファミリーマート</span>
+      </a>
       <a href="../shops/gusto.html" class="shop-card">
         <i class="fa-solid fa-utensils"></i>
         <span>ガスト</span>
       </a>
-      <a href="../shops/starbucks.html" class="shop-card">
-        <i class="fa-solid fa-mug-hot"></i>
-        <span>スターバックス</span>
+      <a href="../shops/uniqlo.html" class="shop-card">
+        <i class="fa-solid fa-shirt"></i>
+        <span>ユニクロ</span>
       </a>
-      <!-- 他の店舗もここに追加できるよ！ -->
+      <a href="../shops/gu.html" class="shop-card">
+        <i class="fa-solid fa-shirt"></i>
+        <span>GU</span>
+      </a>
+      <a href="../shops/donki.html" class="shop-card">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>ドン・キホーテ</span>
+      </a>
+      <a href="../shops/matsukiyo.html" class="shop-card">
+        <i class="fa-solid fa-prescription-bottle"></i>
+        <span>マツモトキヨシ</span>
+      </a>
+      <a href="../shops/kura.html" class="shop-card">
+        <i class="fa-solid fa-fish"></i>
+        <span>くら寿司</span>
+      </a>
+      <a href="../shops/sushiro.html" class="shop-card">
+        <i class="fa-solid fa-fish-fins"></i>
+        <span>スシロー</span>
+      </a>
+      <a href="../shops/kappa.html" class="shop-card">
+        <i class="fa-solid fa-fish"></i>
+        <span>かっぱ寿司</span>
+      </a>
+      <a href="../shops/aeon.html" class="shop-card">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>イオン</span>
+      </a>
+      <a href="../shops/mcdonalds.html" class="shop-card">
+        <i class="fa-solid fa-burger"></i>
+        <span>マクドナルド</span>
+      </a>
+      <a href="../shops/mos.html" class="shop-card">
+        <i class="fa-solid fa-burger"></i>
+        <span>モスバーガー</span>
+      </a>
+      <a href="../shops/yoshinoya.html" class="shop-card">
+        <i class="fa-solid fa-bowl-food"></i>
+        <span>吉野家</span>
+      </a>
+      <a href="../shops/sukiya.html" class="shop-card">
+        <i class="fa-solid fa-bowl-food"></i>
+        <span>すき家</span>
+      </a>
+      <a href="../shops/matsuya.html" class="shop-card">
+        <i class="fa-solid fa-bowl-food"></i>
+        <span>松屋</span>
+      </a>
+      <a href="../shops/marugame.html" class="shop-card">
+        <i class="fa-solid fa-bowl-food"></i>
+        <span>丸亀製麺</span>
+      </a>
+      <a href="../shops/kfc.html" class="shop-card">
+        <i class="fa-solid fa-drumstick-bite"></i>
+        <span>ケンタッキーフライドチキン</span>
+      </a>
+      <a href="../shops/misterdonut.html" class="shop-card">
+        <i class="fa-solid fa-circle-dot"></i>
+        <span>ミスタードーナツ</span>
+      </a>
+      <a href="../shops/doutor.html" class="shop-card">
+        <i class="fa-solid fa-mug-hot"></i>
+        <span>ドトールコーヒー</span>
+      </a>
+      <a href="../shops/komeda.html" class="shop-card">
+        <i class="fa-solid fa-mug-saucer"></i>
+        <span>コメダ珈琲店</span>
+      </a>
+      <a href="../shops/ministop.html" class="shop-card">
+        <i class="fa-solid fa-store"></i>
+        <span>ミニストップ</span>
+      </a>
+      <a href="../shops/seiyu.html" class="shop-card">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>西友</span>
+      </a>
+      <a href="../shops/life.html" class="shop-card">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>ライフ</span>
+      </a>
+      <a href="../shops/welcia.html" class="shop-card">
+        <i class="fa-solid fa-prescription-bottle"></i>
+        <span>ウエルシア</span>
+      </a>
+      <a href="../shops/sugi.html" class="shop-card">
+        <i class="fa-solid fa-prescription-bottle"></i>
+        <span>スギ薬局</span>
+      </a>
+      <a href="../shops/daiso.html" class="shop-card">
+        <i class="fa-solid fa-coins"></i>
+        <span>ダイソー</span>
+      </a>
+      <a href="../shops/biccamera.html" class="shop-card">
+        <i class="fa-solid fa-tv"></i>
+        <span>ビックカメラ</span>
+      </a>
+      <a href="../shops/yamada.html" class="shop-card">
+        <i class="fa-solid fa-tv"></i>
+        <span>ヤマダ電機</span>
+      </a>
+      <a href="../shops/nitori.html" class="shop-card">
+        <i class="fa-solid fa-couch"></i>
+        <span>ニトリ</span>
+      </a>
+      <a href="../shops/workman.html" class="shop-card">
+        <i class="fa-solid fa-person-digging"></i>
+        <span>ワークマン</span>
+      </a>
+      <a href="../shops/shimamura.html" class="shop-card">
+        <i class="fa-solid fa-shirt"></i>
+        <span>しまむら</span>
+      </a>
     </div>
+
+    <p class="note">※一部店舗では対応状況が異なる場合があります。最新の情報は公式サイトや店舗でご確認ください。</p>
 
     <div class="footer-link">
       <a href="../index.html">← ホームに戻る</a>

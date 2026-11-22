@@ -1,38 +1,290 @@
 [
   {
-    "name": "ガスト",
-    "file": "gusto.html",
-    "kana": "がすと",
-    "tags": ["ファミレス", "飲食", "すかいらーく"]
-  },
-  {
     "name": "セブンイレブン",
     "file": "seven.html",
     "kana": "せぶんいれぶん",
-    "tags": ["コンビニ", "小売"]
-  },
-  {
-    "name": "スターバックス",
-    "file": "starbucks.html",
-    "kana": "すたーばっくす",
-    "tags": ["カフェ", "飲食"]
-  },
-  {
-    "name": "無印良品",
-    "file": "muji.html",
-    "kana": "むじるしりょうひん",
-    "tags": ["雑貨", "アパレル"]
+    "tags": [
+      "コンビニ"
+    ]
   },
   {
     "name": "ローソン",
     "file": "lawson.html",
     "kana": "ろーそん",
-    "tags": ["コンビニ", "小売"]
+    "tags": [
+      "コンビニ"
+    ]
   },
   {
     "name": "ファミリーマート",
     "file": "familymart.html",
     "kana": "ふぁみりーまーと",
-    "tags": ["コンビニ", "小売"]
+    "tags": [
+      "コンビニ"
+    ]
+  },
+  {
+    "name": "ガスト",
+    "file": "gusto.html",
+    "kana": "がすと",
+    "tags": [
+      "ファミレス"
+    ]
+  },
+  {
+    "name": "スターバックス",
+    "file": "starbucks.html",
+    "kana": "すたーばっくす",
+    "tags": [
+      "カフェ"
+    ]
+  },
+  {
+    "name": "無印良品",
+    "file": "muji.html",
+    "kana": "むじるしりょうひん",
+    "tags": [
+      "雑貨"
+    ]
+  },
+  {
+    "name": "ユニクロ",
+    "file": "uniqlo.html",
+    "kana": "ゆにくろ",
+    "tags": [
+      "アパレル"
+    ]
+  },
+  {
+    "name": "GU",
+    "file": "gu.html",
+    "kana": "じーゆー",
+    "tags": [
+      "アパレル"
+    ]
+  },
+  {
+    "name": "ドン・キホーテ",
+    "file": "donki.html",
+    "kana": "どんきほーて",
+    "tags": [
+      "小売"
+    ]
+  },
+  {
+    "name": "マツモトキヨシ",
+    "file": "matsukiyo.html",
+    "kana": "まつもときよし",
+    "tags": [
+      "ドラッグストア"
+    ]
+  },
+  {
+    "name": "サイゼリヤ",
+    "file": "saizeriya.html",
+    "kana": "さいぜりや",
+    "tags": [
+      "ファミレス"
+    ]
+  },
+  {
+    "name": "くら寿司",
+    "file": "kura.html",
+    "kana": "くらずし",
+    "tags": [
+      "回転寿司"
+    ]
+  },
+  {
+    "name": "スシロー",
+    "file": "sushiro.html",
+    "kana": "すしろー",
+    "tags": [
+      "回転寿司"
+    ]
+  },
+  {
+    "name": "かっぱ寿司",
+    "file": "kappa.html",
+    "kana": "かっぱずし",
+    "tags": [
+      "回転寿司"
+    ]
+  },
+  {
+    "name": "イオン",
+    "file": "aeon.html",
+    "kana": "いおん",
+    "tags": [
+      "スーパー"
+    ]
+  },
+  {
+    "name": "マクドナルド",
+    "file": "mcdonalds.html",
+    "kana": "まくどなるど",
+    "tags": [
+      "ファストフード"
+    ]
+  },
+  {
+    "name": "モスバーガー",
+    "file": "mos.html",
+    "kana": "もすばーがー",
+    "tags": [
+      "ファストフード"
+    ]
+  },
+  {
+    "name": "吉野家",
+    "file": "yoshinoya.html",
+    "kana": "よしのや",
+    "tags": [
+      "牛丼"
+    ]
+  },
+  {
+    "name": "すき家",
+    "file": "sukiya.html",
+    "kana": "すきや",
+    "tags": [
+      "牛丼"
+    ]
+  },
+  {
+    "name": "松屋",
+    "file": "matsuya.html",
+    "kana": "まつや",
+    "tags": [
+      "牛丼"
+    ]
+  },
+  {
+    "name": "丸亀製麺",
+    "file": "marugame.html",
+    "kana": "まるがめせいめん",
+    "tags": [
+      "うどん"
+    ]
+  },
+  {
+    "name": "ケンタッキーフライドチキン",
+    "file": "kfc.html",
+    "kana": "けんたっきーふらいどちきん",
+    "tags": [
+      "ファストフード"
+    ]
+  },
+  {
+    "name": "ミスタードーナツ",
+    "file": "misterdonut.html",
+    "kana": "みすたーどーなつ",
+    "tags": [
+      "ドーナツ"
+    ]
+  },
+  {
+    "name": "ドトールコーヒー",
+    "file": "doutor.html",
+    "kana": "どとーるこーひー",
+    "tags": [
+      "カフェ"
+    ]
+  },
+  {
+    "name": "コメダ珈琲店",
+    "file": "komeda.html",
+    "kana": "こめだこーひーてん",
+    "tags": [
+      "カフェ"
+    ]
+  },
+  {
+    "name": "ミニストップ",
+    "file": "ministop.html",
+    "kana": "みにすとっぷ",
+    "tags": [
+      "コンビニ"
+    ]
+  },
+  {
+    "name": "西友",
+    "file": "seiyu.html",
+    "kana": "せいゆう",
+    "tags": [
+      "スーパー"
+    ]
+  },
+  {
+    "name": "ライフ",
+    "file": "life.html",
+    "kana": "らいふ",
+    "tags": [
+      "スーパー"
+    ]
+  },
+  {
+    "name": "ウエルシア",
+    "file": "welcia.html",
+    "kana": "うえるしあ",
+    "tags": [
+      "ドラッグストア"
+    ]
+  },
+  {
+    "name": "スギ薬局",
+    "file": "sugi.html",
+    "kana": "すぎやっきょく",
+    "tags": [
+      "ドラッグストア"
+    ]
+  },
+  {
+    "name": "ダイソー",
+    "file": "daiso.html",
+    "kana": "だいそー",
+    "tags": [
+      "100円ショップ"
+    ]
+  },
+  {
+    "name": "ビックカメラ",
+    "file": "biccamera.html",
+    "kana": "びっくかめら",
+    "tags": [
+      "家電量販店"
+    ]
+  },
+  {
+    "name": "ヤマダ電機",
+    "file": "yamada.html",
+    "kana": "やまだでんき",
+    "tags": [
+      "家電量販店"
+    ]
+  },
+  {
+    "name": "ニトリ",
+    "file": "nitori.html",
+    "kana": "にとり",
+    "tags": [
+      "家具・インテリア"
+    ]
+  },
+  {
+    "name": "ワークマン",
+    "file": "workman.html",
+    "kana": "わーくまん",
+    "tags": [
+      "作業服・アウトドア"
+    ]
+  },
+  {
+    "name": "しまむら",
+    "file": "shimamura.html",
+    "kana": "しまむら",
+    "tags": [
+      "アパレル"
+    ]
   }
 ]
